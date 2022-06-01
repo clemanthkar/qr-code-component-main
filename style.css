@@ -1,0 +1,44 @@
+*,::before,::after{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    --white: hsl(0, 0%, 100%);
+    --light_gray: hsl(212, 45%, 89%);
+    --grayish_blue: hsl(220, 15%, 55%);
+    --dark_blue: hsl(218, 44%, 22%);
+}
+
+body{
+    height: 100vh;
+    background: var(--light_gray);
+    font-family: 'Outfit', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    background: var(--white);
+    border-radius: 20px;
+    width: 320px;
+}
+
+.arrondi{
+    border-radius: 10px;
+    margin: 16px;
+}
+
+.title{
+    text-align: center;
+    font-weight: 700;
+    color: var(--dark_blue);
+    margin: 0 45px;
+    font-size: 20px;
+}
+
+.sub-title {
+    text-align: center;
+    color: var(--grayish_blue);
+    font-size: 15px;
+    margin: 20px 30px 40px;
+}
